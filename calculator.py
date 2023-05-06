@@ -2,5 +2,9 @@
 def plus(a, b):
     plus=a+b
     return plus
-print(plus(2, 2))
-    
+
+# вычитание lde вычитание двух чисел(а- уменьшаемое b-вычетаемое )
+def mainus(a,b):
+    mainus=a-b
+    return mainus
+
