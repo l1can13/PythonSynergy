@@ -1,6 +1,3 @@
-x =print(input("введите число"))
-y =print(input("введите второе число "))
-#operation = (x/y)
-#result=(x/y)
-
-
+#функция делит 2 числа (x и y)
+def division(x, y):
+    return x / y
