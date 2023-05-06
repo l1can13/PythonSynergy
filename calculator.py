@@ -1,3 +1,7 @@
+#Умножать два числа(a-первый множитель,b-второй множитель)
+def multiplication(a,b):
+    return a*b
+
 #функция делит 2 числа (x и y)
 def division(x, y):
     return x / y
