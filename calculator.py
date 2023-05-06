@@ -16,3 +16,8 @@ def mainus(a,b):
     mainus=a-b
     return mainus
 
+# Возведение в степень n(a-число, b-степень)
+def stepn(a, b):
+    stepn=a**b
+    return stepn
+
