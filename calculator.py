@@ -16,3 +16,7 @@ def mainus(a,b):
     mainus=a-b
     return mainus
 
+#функция извлекает квадратный корень 
+def extraction(x):
+    y=x**0.5
+    return y
