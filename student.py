@@ -1,3 +1,5 @@
+from random import randint
+
 class Student:
     def __init__(self, name, age, id,):
         self.name = name
@@ -7,6 +9,9 @@ class Student:
 
     def change_name(self, new_name):
         self.name = new_name
+    
+    def get_avg_mark(self):
+        return randint(0, 5)
         
     def set_salary(self, salary):
         self.salary = salary
