@@ -11,3 +11,7 @@ print(student1.name)
 student1.change_name('Витя Пупкин')
 
 print(student1.name)
+
+student1.difference()
+
+print(student1.difference())

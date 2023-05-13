@@ -6,3 +6,6 @@ class Student:
 
     def change_name(self, new_name):
         self.name = new_name
+
+    def difference(self):
+        return(self.age - self.id)
