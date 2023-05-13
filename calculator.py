@@ -16,8 +16,12 @@ def mainus(a,b):
     mainus=a-b
     return mainus
 
+#функция извлекает квадратный корень 
+def extraction(x):
+    y=x**0.5
+    return y
+
 # Возведение в степень n(a-число, b-степень)
 def stepn(a, b):
     stepn=a**b
     return stepn
-
