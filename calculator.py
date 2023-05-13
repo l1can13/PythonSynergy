@@ -20,3 +20,8 @@ def mainus(a,b):
 def extraction(x):
     y=x**0.5
     return y
+
+# Возведение в степень n(a-число, b-степень)
+def stepn(a, b):
+    stepn=a**b
+    return stepn
