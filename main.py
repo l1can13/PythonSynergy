@@ -3,14 +3,16 @@ from student import Student
 name = 'Вася Пупкин'
 age = 16
 id = 1
+fakultet = 'медицинский'
 
 
 student1 = Student(name, age, id)
 
-print(student1.name)
+print(student1.fakultet)
 
-student1.change_name('Витя Пупкин')
+student1.change_fakultet('медицинский')
 
+print(student1.fakultet)
 print(student1.get_avg_mark())
 print(student1.nam
 
