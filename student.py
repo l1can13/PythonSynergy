@@ -18,6 +18,9 @@ class Student:
 
     def change_name(self, new_name):
         self.name = new_name
+
+    def difference(self):
+        return(self.age - self.id)
     
     def get_avg_mark(self):
         return randint(0, 5)

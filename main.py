@@ -18,6 +18,11 @@ print(student1.nam
 
 student1.get_birth_year()
 
+print(student1.name)
+
+student1.difference()
+
+print(student1.difference())
 print(student1.get_birth_year())
 student1.get_num_letters_name()
 print(student1.get_num_letters_name())
