@@ -10,4 +10,4 @@ print(student1.name)
 
 student1.change_name('Витя Пупкин')
 
-print(student1.name)
+print(student1.get_avg_mark())
