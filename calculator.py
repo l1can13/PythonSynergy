@@ -1,3 +1,4 @@
+from math import tanh,ctg
 import math
 
 class Calculator:
@@ -64,3 +65,23 @@ class Calculator:
            return: результат деления по модулю a, b
         """
         return a%b
+
+      def tg(a):
+        """Вычисляет тангенс a.
+        params:
+        a - первое.
+        tanh - вычисляет тангенс.
+        return: результат вычисления.
+        """
+        return tanh(a)
+    
+    @staticmethod
+    def ctg(a):
+        """Вычисляет котангенс a.
+        params :
+        a - первое.
+        ctg - вычесляет котангенс.
+        return: результат вычисления 
+        """
+        return ctg(a)
+      
