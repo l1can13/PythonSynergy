@@ -1,16 +1,72 @@
 from math import tanh,ctg
+import math
+
 class Calculator:
     @staticmethod
     def add(a,b):
-        """Складывает два значения.
+        """
+        складывай два числа.
+
         params:
-            a - первое.
-            b - второое.
-        return: результат ложения a,b.
+             a-первое слогаемое
+             b-второе слогаемое
+        return - результат сложения a, b.
         """
         return a+b
 
-    def tg(a):
+    @staticmethod
+    def grad_to_rad(grad):
+        return grad / 360 * math.pi * 2
+
+    @staticmethod
+    def cos(a):
+        """
+        находит косинус заданного угла
+
+        params:
+            a-угол
+            return- значение косинуса
+        """
+        return math.cos(Calculator.grad_to_rad(a))
+      
+    @staticmethod
+    def sin(a):
+        """
+        находит синус заданного угла
+
+        params:
+            a-угол
+            return- значение синуса
+        """
+        return math.sin(Calculator.grad_to_rad(a))
+
+    @staticmethod
+    def division(a, b):
+        """
+           Деление двух значений.
+
+           params:
+                  a-первое значение
+                  b-второе значение
+
+           return: результат деления a, b
+        """
+        return a/b
+
+    @staticmethod
+    def division_by_modulus(a, b):
+        """
+           Деление двух значений по модулю.
+
+           params:
+                  a-первое значение
+                  b-второе значение
+
+           return: результат деления по модулю a, b
+        """
+        return a%b
+
+      def tg(a):
         """Вычисляет тангенс a.
         params:
         a - первое.
@@ -18,6 +74,8 @@ class Calculator:
         return: результат вычисления.
         """
         return tanh(a)
+    
+    @staticmethod
     def ctg(a):
         """Вычисляет котангенс a.
         params :
@@ -26,3 +84,4 @@ class Calculator:
         return: результат вычисления 
         """
         return ctg(a)
+      
