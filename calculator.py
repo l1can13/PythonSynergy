@@ -12,36 +12,28 @@ class Calculator:
         """
         return a+b
 
-
-
-
-
+#Деление, деление по модулю.
     @staticmethod
-    def add(a, b):
+    def division(a, b):
         """
            Деление двух значений.
 
            params:
-                  a-первое слагаемое
-                  b-второе слагаемое
+                  a-первое значение
+                  b-второе значение
 
            return: результат деления a, b
         """
         return a/b
 
-
-
-
-
-    
     @staticmethod
-    def add(a, b):
+    def division_by_modulus(a, b):
         """
            Деление двух значений по модулю.
 
            params:
-                  a-первое слагаемое
-                  b-второе слагаемое
+                  a-первое значение
+                  b-второе значение
 
            return: результат деления по модулю a, b
         """
