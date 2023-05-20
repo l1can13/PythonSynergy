@@ -1,11 +1,9 @@
-from math import factorial
-from math import tanh,ctg
 import math
 
+
 class Calculator:
-  
     @staticmethod
-    def add(a,b):
+    def add(a, b):
         """
         складывай два числа.
 
@@ -14,7 +12,8 @@ class Calculator:
              b-второе слогаемое
         return - результат сложения a, b.
         """
-        return a+b
+
+        return a + b
 
     @staticmethod
     def grad_to_rad(grad):
@@ -29,8 +28,9 @@ class Calculator:
             a-угол
             return- значение косинуса
         """
+
         return math.cos(Calculator.grad_to_rad(a))
-      
+
     @staticmethod
     def sin(a):
         """
@@ -40,6 +40,7 @@ class Calculator:
             a-угол
             return- значение синуса
         """
+
         return math.sin(Calculator.grad_to_rad(a))
 
     @staticmethod
@@ -53,7 +54,8 @@ class Calculator:
 
            return: результат деления a, b
         """
-        return a/b
+
+        return a / b
 
     @staticmethod
     def division_by_modulus(a, b):
@@ -66,29 +68,26 @@ class Calculator:
 
            return: результат деления по модулю a, b
         """
-        return a%b
 
-      def tg(a):
+        return a % b
+
+    @staticmethod
+    def tg(a):
         """Вычисляет тангенс a.
         params:
         a - первое.
         tanh - вычисляет тангенс.
         return: результат вычисления.
         """
-        return tanh(a)
-    
+
+        return math.tan(a)
+
     @staticmethod
-    def ctg(a):
-        """Вычисляет котангенс a.
-        params :
-        a - первое.
-        ctg - вычесляет котангенс.
-        return: результат вычисления 
-        """
-        return ctg(a)
-      
-      @ staticmethod
-    def root_extraction(a, n,):
+    def ctg(x):
+        return 1 / math.tan(x)
+
+    @staticmethod
+    def root_extraction(a, n, ):
         """
         vivod korna n-stepeni
         params:
@@ -96,10 +95,11 @@ class Calculator:
             n - stepen korna
             returne: n koren iz a
         """
-        return a**(1/n)
 
-    @ staticmethod
-    def exponentiation(a, n,):
+        return a ** (1 / n)
+
+    @staticmethod
+    def exponentiation(a, n, ):
         """
         vvod v stepen
         params:
@@ -107,23 +107,25 @@ class Calculator:
             n - stepen 
             returne: a v stepeni n
         """
-        return a**n
-      
+
+        return a ** n
+
     @staticmethod
-    def sub(A,B):
-            """
-            Вычитается два числа.
+    def sub(A, B):
+        """
+        Вычитается два числа.
 
-            params:
-                A-Уменьшаемое.
-                B-Вычитаемое.
+        params:
+            A-Уменьшаемое.
+            B-Вычитаемое.
 
-            return: Результат вычитаемого A,B.
-            """
-            return A-B
+        return: Результат вычитаемого A,B.
+        """
 
-            @staticmethod
-    def multiplication(A,B):
+        return A - B
+
+    @staticmethod
+    def multiplication(A, B):
         """
         Умножается два числа.
 
@@ -132,26 +134,31 @@ class Calculator:
              B-Множитель.
 
         return: Результат умножения A,B.
-                """
-        return A*B
-      
-   @ staticmethod
+        """
+
+        return A * B
+
+    @staticmethod
     def twotothepower(n):
         """ значеие 2 в степени n
         params:
         n = n-ная степеть
         return: результат 2 в n-ной степени
         """
-        return 2^n
-    @ staticmethod
-    def invert(у):
+
+        return 2 ^ n
+
+    @staticmethod
+    def invert(y):
         """инвертирование
         params:
-         а - число 
+         а - число
         return: инвертировали число в минус n-ной степени
         """
-        return 1/у^-1
-      
+
+        return 1 / y ** -1
+
+    @staticmethod
     def abs(a):
         """
             Делает модуль из числа.
@@ -161,9 +168,11 @@ class Calculator:
 
             return:число в модуле.
         """
+
         return abs(a)
 
-    def factorial(b):
+    @staticmethod
+    def fact(b):
         """
             Находит факториал числа.
 
@@ -172,4 +181,5 @@ class Calculator:
 
             return:факориал числа.
         """
-        return factorial(b)
+
+        return math.factorial(b)
