@@ -1,3 +1,4 @@
+from math import factorial
 from math import tanh,ctg
 import math
 
@@ -150,3 +151,25 @@ class Calculator:
         return: инвертировали число в минус n-ной степени
         """
         return 1/у^-1
+      
+    def abs(a):
+        """
+            Делает модуль из числа.
+
+            parans:
+            a-число которое хотим перевести в модуль.
+
+            return:число в модуле.
+        """
+        return abs(a)
+
+    def factorial(b):
+        """
+            Находит факториал числа.
+
+            parans:
+            b-число факториал которого хотим найти.
+
+            return:факориал числа.
+        """
+        return factorial(b)
