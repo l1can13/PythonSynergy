@@ -8,14 +8,16 @@ class Calculator:
         return: результат сложение a,b.
         """
         return a+b
-    def add(n):
+    @ staticmethod
+    def twotothepower(n):
         """ значеие 2 в степени n
         params:
         n = n-ная степеть
         return: результат 2 в n-ной степени
         """
         return 2^n
-    def add(у):
+    @ staticmethod
+    def invert(у):
         """инвертирование
         params:
          а - число 
