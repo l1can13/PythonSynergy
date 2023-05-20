@@ -1,18 +1,44 @@
+import math
+
 class Calculator:
     @staticmethod
-    def add(a, b):
+    def add(a,b):
         """
-           Складывает два значения.
+        складывай два числа.
 
-           params:
-                  a-первое слагаемое
-                  b-второе слагаемое
-
-           return: результат сложения a, b
+        params:
+             a-первое слогаемое
+             b-второе слогаемое
+        return - результат сложения a, b.
         """
         return a+b
 
-#Деление, деление по модулю.
+    @staticmethod
+    def grad_to_rad(grad):
+        return grad / 360 * math.pi * 2
+
+    @staticmethod
+    def cos(a):
+        """
+        находит косинус заданного угла
+
+        params:
+            a-угол
+            return- значение косинуса
+        """
+        return math.cos(Calculator.grad_to_rad(a))
+      
+    @staticmethod
+    def sin(a):
+        """
+        находит синус заданного угла
+
+        params:
+            a-угол
+            return- значение синуса
+        """
+        return math.sin(Calculator.grad_to_rad(a))
+
     @staticmethod
     def division(a, b):
         """
